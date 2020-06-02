@@ -1,3 +1,23 @@
+html, body {
+  font: 400 16px 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
 #app .view {
   padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+input, button, textarea {
+  font: inherit;
+}
+
+::placeholder {
+  font: inherit;
+  color: #ccc;
+  font-weight: 300;
 }

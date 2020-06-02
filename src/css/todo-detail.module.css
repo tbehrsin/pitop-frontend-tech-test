@@ -1,0 +1,24 @@
+
+.container {
+  margin-top: 0.5em;
+}
+
+.container > div {
+  padding: 0.5em;
+  white-space: pre-wrap;
+}
+
+.heading {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.tags {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tags > div {
+  display: inline;
+  border: none !important;
+}

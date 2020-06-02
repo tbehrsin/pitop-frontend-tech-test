@@ -3,9 +3,12 @@ import ReactDOM from 'react-dom';
 
 import './css/app.css';
 import './css/header.css';
-import App from './components/App.jsx';
+import { API } from './api';
+import App from './components/App';
 
 ReactDOM.render(
-  <App />,
+  <API url="https://backend-test.pi-top.com/todo-test/v1">
+    <App />
+  </API>,
   document.getElementById('app'),
 );

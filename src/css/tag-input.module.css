@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+}
+
+.container > input[type=text] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  margin: 0;
+  background: none;
+}
+
+.tag {
+  padding: 0.5em;
+  background: #08b;
+  color: white;
+  margin: 0.5em;
+  border-radius: 4px;
+}
+
+.delete {
+  opacity: 0.5;
+  cursor: pointer;
+  margin-left: 0.5em;
+}

@@ -1,0 +1,43 @@
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.container > form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.container > form > input[type=text],
+.container > form > input[type=number],
+.container > form > textarea {
+  flex: 1;
+  margin: 0 0 0.5em;
+  font: inherit;
+  border-radius: 4px;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+.container > form > button {
+  flex: 1;
+  margin: 0 0 0.5em;
+  font: inherit;
+  border-radius: 4px;
+  padding: 0.5em;
+  background: #08b;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  border: 1px solid red;
+  color: red;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin: 0 0 0.5em;
+}

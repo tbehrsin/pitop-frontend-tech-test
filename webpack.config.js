@@ -14,10 +14,21 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        exclude: /\.module\.css$/,
+        use: [ 'style-loader', 'css-loader']
       },
       {
-        test: /\.(js|jsx)$/,
+        test: /\.module\.css$/,
+        use: [ 'style-loader', {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            localsConvention: 'camelCaseOnly'
+          }
+        }]
+      },
+      {
+        test: /\.(jsx?)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
